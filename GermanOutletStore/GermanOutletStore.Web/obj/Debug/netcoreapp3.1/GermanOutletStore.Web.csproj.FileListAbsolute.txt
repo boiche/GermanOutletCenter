@@ -213,9 +213,6 @@ C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutle
 C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\obj\Debug\netcoreapp3.1\GermanOutletStore.Web.csproj.CoreCompileInputs.cache
-C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\obj\Debug\netcoreapp3.1\GermanOutletStore.Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\obj\Debug\netcoreapp3.1\GermanOutletStore.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\bin\Debug\netcoreapp3.1\GermanOutletStore.Web.StaticWebAssets.xml
 C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -225,3 +222,6 @@ C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutle
 C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\obj\Debug\netcoreapp3.1\GermanOutletStore.Web.csproj.CoreCompileInputs.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\obj\Debug\netcoreapp3.1\GermanOutletStore.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Web\obj\Debug\netcoreapp3.1\GermanOutletStore.Web.MvcApplicationPartsAssemblyInfo.cache

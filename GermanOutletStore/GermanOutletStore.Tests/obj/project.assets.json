@@ -3419,8 +3419,7 @@
           "GermanOutletStore.Data": "1.0.0",
           "GermanOutletStore.Models": "1.0.0",
           "GermanOutletStore.Services": "1.0.0",
-          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.4",
-          "Microsoft.AspNetCore.Identity": "2.2.0"
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.4"
         },
         "compile": {
           "bin/placeholder/GermanOutletStore.Web.dll": {}

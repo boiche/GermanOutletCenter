@@ -9323,7 +9323,6 @@
       "GermanOutletStore.Models >= 1.0.0",
       "GermanOutletStore.Services >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.4",
-      "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.2"
     ]
   },
@@ -9391,10 +9390,6 @@
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.4, )"
-          },
-          "Microsoft.AspNetCore.Identity": {
-            "target": "Package",
-            "version": "[2.2.0, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "suppressParent": "All",
