@@ -1,0 +1,256 @@
+﻿#item-container {
+    color: rgb(119, 119, 119);
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23.8px;
+    overflow-wrap: break-word;
+    width: 282.867px;
+}
+
+#container {
+    color: rgb(119, 119, 119);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23.8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+#subcontainer-border {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0% 0%;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: rgb(119, 119, 119);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.8px;
+    border-image-outset: 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(119, 119, 119);
+    border-left-style: solid;
+    border-left-width: 0.8px;
+    border-right-color: rgb(119, 119, 119);
+    border-right-style: solid;
+    border-right-width: 0.8px;
+    border-top-color: rgb(119, 119, 119);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: solid;
+    border-top-width: 0.8px;
+    color: rgb(119, 119, 119);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23.8px;
+    overflow-wrap: break-word;
+    padding-bottom: 12px;
+    padding-top: 9px;
+    text-align: center;
+}
+
+#sale-subcontainer-border {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0% 0%;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: rgb(119, 119, 119);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.8px;
+    border-image-outset: 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(119, 119, 119);
+    border-left-style: solid;
+    border-left-width: 0.8px;
+    border-right-color: rgb(119, 119, 119);
+    border-right-style: solid;
+    border-right-width: 0.8px;
+    border-top-color: rgb(119, 119, 119);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: solid;
+    border-top-width: 0.8px;
+    color: rgb(119, 119, 119);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23.8px;
+    overflow-wrap: break-word;
+    padding-bottom: 13px;
+    padding-top: 7px;
+    text-align: center;
+}
+
+#category-image {
+    clear: both;
+    color: rgb(119, 119, 119);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    height: 150px;
+    line-height: 23.8px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.details {
+    color: rgb(227, 79, 52);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23.8px;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: rgb(227, 79, 52);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: color;
+    transition-timing-function: linear;
+    text-decoration:none;
+}
+
+.item-image {
+    border-image-outset: 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(227, 79, 52);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(227, 79, 52);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(227, 79, 52);
+    border-top-style: none;
+    border-top-width: 0px;
+    color: rgb(227, 79, 52);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    height: 150px;
+    line-height: 23.8px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+#category-name {
+    color: rgb(119, 119, 119);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23.8px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+#price-box {
+    color: rgb(119, 119, 119);
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23.8px;
+    margin-bottom: 5px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+#price {
+    color: rgb(153, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23.8px;
+    overflow-wrap: break-word;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#old-price {
+    text-decoration: line-through solid;
+    font-weight: normal;
+    font-size: 15px;
+    float: initial;
+    margin-right: 20px;
+}
+
+#special-price {
+    font-size: 19px;
+    font-weight: bold;
+    color: red;
+    margin: 0px 0px 0px 13px;
+    padding: 10px 10px 10px 0px;
+}
+
+#brand-logo {
+    width: 325px;
+    height: 225px;
+    text-align: right;
+    display: block;
+    float: right;
+}
+
+.item-info {
+    display: block;
+    margin-top: 100px;
+    font-size: 17px;
+}
+
+.info-section {
+    color: #999;
+}
+
+#product-price {
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    display: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+}
+
+#quantity-input {
+    text-align:center; 
+    width:60px; 
+    border: 1px solid #F58320;
+}

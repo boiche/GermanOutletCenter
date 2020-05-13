@@ -1,0 +1,60 @@
+﻿@model ProductViewModel
+@using GermanOutletStore.Data
+@inject StoreDbContext context
+    
+    <tr>
+        <td>@Model.Name</td>
+        <td>@(String.Format("{0:F2}", Model.Price))</td>
+        <td>@context.Brands.First(x => x.Id == Model.BrandId).Name</td>
+        @{
+            if (Model.IsInStock == false)
+            {
+                <td class="text-danger">Out of stock</td>                
+            }
+            else
+            {
+                <td class="text-success">In stock</td>
+            }
+        }
+        <td>
+            @{
+                foreach (ProductSize size in Model.AvailableSizes)
+                {
+                    @context.Sizes.First(x => x.Id == size.SizeId).Name;
+                    if (size.IsInStock == true)
+                    {
+                        <input type="checkbox" disabled checked />
+                    }
+                    else
+                    {
+                    <input type="checkbox" disabled />
+                    }
+                }
+            }
+        </td>        
+        <td>
+            <a asp-area="Admin" asp-controller="Products" asp-action="EditProduct" asp-route-id="@Model.Id" class="btn btn-info">Edit</a>
+            @{
+                if (Model.IsInStock == false)
+                {
+                    <a asp-area="Admin" asp-controller="Products" asp-action="ChangeStockInStock" asp-route-id="@Model.Id" class="btn btn-success">In stock</a>
+                }
+                else
+                {
+                    <a asp-area="Admin" asp-controller="Products" asp-action="ChangeStockOutOfStock" asp-route-id="@Model.Id" class="btn btn-warning">Out of stock</a>
+                }
+             }
+            <a asp-area="Admin" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+            @{
+                if (Model.IsOnSale == true)
+                {
+                    <a asp-area="Admin" asp-controller="Products" asp-action="RemoveSale" asp-route-id="@Model.Id" class="btn btn-default">Remove Sale</a>
+                }
+                else
+                {
+                    <a asp-area="Admin" asp-controller="Products" asp-action="OnSale" asp-route-id="@Model.Id" class="btn btn-default">Put On Sale</a>
+                }
+            }
+            <a asp-area="Admin" asp-page="/Reviews/AllReviews" class="btn btn-default" asp-route-id="@Model.Id">Preview reviews</a>
+        </td>
+    </tr>

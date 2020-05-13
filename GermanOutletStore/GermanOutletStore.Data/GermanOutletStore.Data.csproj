@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180811101511_AddedSizes.cs" />
+    <Compile Remove="Migrations\20180811101752_AddedSizes.cs" />
+    <Compile Remove="Migrations\20180811111135_ProductsImages.cs" />
+    <Compile Remove="Migrations\20180811112239_ProductsInStock.cs" />
+    <Compile Remove="Migrations\20180811182255_ProductSalesCorrection.cs" />
+    <Compile Remove="Migrations\20180812085733_RemovedSizeShoeProp.cs" />
+    <Compile Remove="Migrations\20180812093856_ChangedPrices.cs" />
+    <Compile Remove="Migrations\20180812101156_IsInStockGivenSize.cs" />
+    <Compile Remove="Migrations\20180813123845_ChangedCustomersIdType.cs" />
+    <Compile Remove="Migrations\20180815131036_AddedBrandsLogos.cs" />
+    <Compile Remove="Migrations\20180820115432_ChangedPricesTypes.cs" />
+    <Compile Remove="Migrations\20180822125946_FixedOrders.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GermanOutletStore.Models\GermanOutletStore.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore">
+      <HintPath>..\..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.identity.entityframeworkcore\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

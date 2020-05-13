@@ -1,0 +1,49 @@
+﻿@model CheckoutBindingModel
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "_CheckoutLayout";
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <h2>Contact information</h2>
+        <form method="post" asp-area="" asp-controller="Checkout" asp-action="Checkout" class="form-horizontal">
+            <input asp-for="@Model.Email" class="form-control" placeholder="Email" /><br />
+            <h2>Shipping address</h2>
+            <input asp-for="@Model.FirstName" placeholder="First name" class="form-control field-input field-group" />
+            <input asp-for="@Model.LastName" placeholder="Last name" class="form-control field-input field-group" />
+            <input asp-for="@Model.Address" placeholder="Address" class="form-control field-input" />
+            <input asp-for="@Model.City" placeholder="City" class="form-control field-input" />
+            <select asp-for="@Model.Country" placeholder="Country" asp-items="@new SelectList(Model.Countries)" class="form-control field-input field-group"></select>
+            <input asp-for="@Model.PostalCode" placeholder="Postal code" class="form-control field-input field-group" />  
+            <input asp-for="@Model.Phone" placeholder="Phone" class="form-control field-input" />
+            <input asp-for="@Model.TimeOfOrder" hidden value="@DateTime.Now" />
+            <input asp-for="@Model.OrderedProducts" value="@Model.OrderedProducts" hidden />
+            <input asp-for="@Model.ExpectedTimeOfDeliver" hidden value="@DateTime.Now.AddDays(18)" />            
+
+            <a class="btn-link" asp-area="" asp-controller="Checkout" asp-action="Cart">< Return to shopping cart</a>
+            <input type="submit" class="btn btn-info btn-lg" value="Order" style="float:right"/>
+        </form>
+        <em>Note: Pay in cash when the stock is delivered.</em>
+    </div>
+    <div class="col-lg-6" id="details-section">
+        <ul class="list-unstyled">
+            @Html.DisplayFor(x => x.OrderedProducts)
+        </ul>
+        <div style="float:right">
+            <div>
+                <h2>Expected date of deliver: </h2>
+                <span>@DateTime.Now.AddDays(18).ToLongDateString()</span>
+            </div>
+            <hr />
+            <div>
+                <h2>Total: </h2>
+                <span>@(String.Format("{0:F2}", Model.Total)) BGN</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{ 
+    <partial name="_ValidationScriptsPartial.cshtml" />
+}

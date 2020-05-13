@@ -1,0 +1,21 @@
+﻿@page "/Admin/Categories/Create"
+@model GermanOutletStore.Web.Areas.Admin.Pages.Categories.CreateModel
+@{
+    ViewData["Title"] = "Create new category";
+}
+
+<h1>Create new category</h1>
+<div class="container-fluid">
+    <form class="form-horizontal" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Name: </label>
+            <input class="form-control" asp-for="@Model.ProductType.Name" name="newCategoryName" placeholder="Category name" />
+        </div>
+            <input class="file" value="Choose file." type="file" name="uploadedFile" accept="image/*" />
+        
+        <div class="form-group">
+            <input type="submit" class="btn btn-success" value="Create" />
+            <a class="btn btn-default" asp-page="/Categories/AllCategories">Cancel</a>
+        </div>
+    </form>    
+</div>

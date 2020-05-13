@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ProductViewModel>
+@using GermanOutletStore.Data
+@inject StoreDbContext context
+@{
+    string categoryName = Context.Request.QueryString.Value.Split('=').Last();
+
+    if (string.IsNullOrEmpty(categoryName))
+    {
+        ViewData["Title"] = "All Products";
+        <h1>All Products</h1>
+    }
+    else
+    {
+        ViewData["Title"] = $"Shop for {categoryName}";
+        <h1>All @categoryName</h1>
+    }
+}
+
+<ul class="list-unstyled">
+    <div class="row">
+        @Html.DisplayForModel()
+    </div>
+</ul>

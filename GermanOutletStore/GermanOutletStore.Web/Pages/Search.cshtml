@@ -1,0 +1,12 @@
+﻿@page
+@model GermanOutletStore.Web.Pages.SearchModel
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h2>Search results: "@Model.SearchTerm"</h2>
+<ul class="list-unstyled">
+    <div class="row">
+        @Html.DisplayFor(model => model.SearchResults)
+    </div>
+</ul>

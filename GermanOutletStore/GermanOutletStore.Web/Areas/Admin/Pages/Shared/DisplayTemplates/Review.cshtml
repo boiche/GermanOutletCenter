@@ -1,0 +1,15 @@
+﻿@model Review
+@using GermanOutletStore.Data
+@inject StoreDbContext context
+    
+<li class="review-info">
+    <div class="row">
+        <div class="col-lg-6">@Model.PublishedOnDate</div>
+        <div class="col-lg-6">Review by @context.Users.First(x => x.Id == Model.CustomerId)</div>
+    </div>
+    <span>@Model.Content</span>
+    <form method="post" asp-area="" asp-page="/Reviews/AllProducts" asp-route-id="@Model.ProductId">
+        <input type="submit" class="btn btn-info" value="Remove" asp-page="/Reviews/AllReviews" asp-route-id="@Model.ProductId" asp-route-reviewId="@Model.Id"/>    
+    </form>
+    <hr />
+</li>

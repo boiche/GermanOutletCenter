@@ -1,0 +1,21 @@
+﻿@page "/Admin/Categories/Edit/{id:int}"
+@model GermanOutletStore.Web.Areas.Admin.Pages.Categories.EditModel
+@{
+    ViewData["Title"] = "Edit category";
+}
+
+<h1>Edit @Model.ProductType.Name category</h1>
+<div class="container-fluid">
+    <form class="form-horizontal" method="post">
+        <div class="form-group">
+            <label>Name: </label>
+            <input class="form-control" asp-for="@Model.ProductType.Name" name="newName" value="@Model.ProductType.Name" />
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-success" value="Edit" />
+            <button asp-page-handler="delete" class="btn btn-danger">Delete</button>
+            <a class="btn btn-default" asp-page="/Categories/AllCategories">Cancel</a>
+        </div>
+    </form>
+    <em>Note: to visualise properly category's image, please rename image file that corresponds to the category with its new name manually.</em>
+</div>

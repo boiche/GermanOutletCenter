@@ -1,0 +1,44 @@
+﻿@model BrandCreationBindingModel
+@{
+    ViewData["Title"] = "Create new brand";
+}
+
+<h2>Create new brand</h2>
+<div class="container-fluid">
+    <form asp-area="Admin" asp-controller="Brands" asp-action="Create" method="post" class="form-horizontal">
+        <input asp-for="@Model.ProductId" hidden value="@Model.ProductId" />
+        <div class="form-group">
+            <label>Name: </label>
+            <input asp-for="@Model.NewName" class="form-control" placeholder="Name" name="NewName" />
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input asp-for="@Model.Description" class="form-control" placeholder="Description" />
+        </div>
+        <div class="form-group">
+            <label>Image Path: </label>
+            <input type="text" asp-for="@Model.ImagePath" name="ImagePath" class="form-control" readonly />
+        </div>
+        <div class="form-group">
+            <input class="file" value="Choose file." type="file" name="UploadedFile" accept="image/*" asp-for="@Model.UploadedFile" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-success" />
+            <a class="btn btn-default" asp-area="Admin" asp-controller="Brands" asp-action="AllBrands">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+<script>
+    $(function () {
+        $("#NewName")
+            .change(function (e) {
+                let value = $(this).val();
+                let imagePath = `/SiteImages/brands/` + value.split(new RegExp(/[“|\\ \?:,\*<>#'&'\+%{}[\]~\)\(]+/)).join("") + ".jpg";
+                $("#ImagePath").val(imagePath);
+            });
+    });
+</script>
+}

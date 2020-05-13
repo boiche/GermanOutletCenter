@@ -1,0 +1,54 @@
+﻿@model ProductShoppingCartViewModel
+@using GermanOutletStore.Data
+@inject StoreDbContext context
+@{
+    decimal discountPrice = 0m;
+}
+
+<tr>
+    <td style="vertical-align:inherit">
+        <a asp-area="" asp-controller="Products" asp-action="Details" asp-route-id="@Model.Id">
+            <img src="@Model.ImagePath" alt="@Model.Name" style="width:75px;height:75px" />
+            <input hidden asp-for="@Model.ImagePath" value="@Model.ImagePath" />
+            <input hidden asp-for="@Model.Id" value="@Model.Id" />
+        </a>
+    </td>
+    <td style="vertical-align:inherit">
+        <h4>@Model.Name <input hidden asp-for="@Model.Name" value="@Model.Name"></h4>
+        <dl>
+            <dt>Size</dt>
+            <dt>@Model.Size <input hidden asp-for="@Model.Size" value="@Model.Size" /></dt>
+        </dl>
+    </td>
+    @{
+        if (Model.SaleId == null)
+        {
+            <td style="vertical-align:inherit">@(String.Format("{0:F2}", Model.Price)) BGN <input hidden asp-for="@Model.Price" value="@Model.Price" /></td>
+        }
+        else
+        {
+            discountPrice = context.Sales.First(x => x.Id == Model.SaleId).DiscountPrice;
+            <td style="vertical-align:inherit">@(String.Format("{0:F2}", discountPrice)) BGN<input hidden asp-for="@Model.Price" value="@discountPrice" /></td>            
+        }
+    }
+    <td style="vertical-align:inherit">
+        <input asp-for="@Model.Quantity" value="@Model.Quantity" min="1" max="25" type="number" id="quantity-input" />
+    </td>
+    @{ 
+        if (Model.SaleId != null)
+        {
+            <td style="vertical-align:inherit">@(String.Format("{0:F2}", discountPrice * Model.Quantity)) BGN</td>
+        }
+        else
+        {
+            <td style="vertical-align:inherit">@(String.Format("{0:F2}", Model.Price * Model.Quantity)) BGN</td>
+        }
+    }
+    <td style="vertical-align:inherit">
+        <a asp-area="" asp-controller="Checkout" asp-action="Remove" asp-route-id="@Model.Id" asp-route-Size="@Model.Size">
+            <img src="~/images/btn-remove.png" />
+        </a>
+    </td>    
+</tr>
+
+<input asp-for="@Model.OldQuantity" value="@Model.Quantity" hidden />

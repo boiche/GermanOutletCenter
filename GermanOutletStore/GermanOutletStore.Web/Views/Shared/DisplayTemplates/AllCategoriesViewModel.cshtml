@@ -1,0 +1,18 @@
+﻿@model AllCategoriesViewModel
+    
+<div class="col-lg-4" id="item-container">
+    <div id="container">
+        <div id="subcontainer-border">
+            <div id="category-image">
+                <a asp-area="" asp-controller="Products" asp-action="AllProducts" asp-route-type="@Model.Name" title="@Model.Name">
+                    <img class="item-image" src="~/SiteImages/categories/@string.Concat(Model.Name, ".jpg")" />
+                </a>
+            </div>
+            <span id="category-name">
+                <a class="details" asp-area="" asp-controller="Products" asp-action="AllProducts" asp-route-type="@Model.Name" title="@Model.Name">
+                    @Model.Name
+                </a>
+            </span>
+        </div>
+    </div>
+</div>

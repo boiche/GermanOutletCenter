@@ -1,0 +1,10 @@
+﻿@model Review
+@using GermanOutletStore.Data
+@inject StoreDbContext context
+   
+<div class="row">
+    <div class="col-lg-6">@Model.PublishedOnDate</div>
+    <div class="col-lg-6">Review by @context.Users.First(x=>x.Id == Model.CustomerId)</div>
+</div>
+<span>@Model.Content</span>
+<hr />        

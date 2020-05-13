@@ -1,0 +1,46 @@
+﻿@model ProductCheckoutViewModel
+@using GermanOutletStore.Data
+@inject StoreDbContext context
+@{
+    decimal discountPrice = 0m;
+}
+
+<li class="row">
+    <div style="vertical-align:inherit" class="col-lg-2">
+        <a asp-area="" asp-controller="Products" asp-action="Details" asp-route-id="@Model.Id">
+            <img src="@Model.ImagePath" alt="@Model.Name" style="width:75px;height:75px; border:double black" />
+            <input hidden asp-for="@Model.ImagePath" value="@Model.ImagePath" />
+            <input hidden asp-for="@Model.Id" value="@Model.Id" />
+        </a>
+    </div>
+    <div style="vertical-align:inherit" class="col-lg-5">
+        <h4>@Model.Name <input hidden asp-for="@Model.Name" value="@Model.Name"></h4>
+        <dl>
+            <dt>Size</dt>
+            <dt>@Model.Size <input hidden asp-for="@Model.Size" value="@Model.Size" /></dt>
+        </dl>
+    </div>
+    @{
+        if (Model.SaleId == null)
+        {
+            <div style="vertical-align:inherit" class="col-lg-1">@(String.Format("{0:F2}", Model.Price)) BGN <input hidden asp-for="@Model.Price" value="@Model.Price" /></div>
+        }
+        else
+        {
+            discountPrice = context.Sales.First(x => x.Id == Model.SaleId).DiscountPrice;
+            <div style="vertical-align:inherit" class="col-lg-1">@(String.Format("{0:F2}", discountPrice)) BGN <input hidden asp-for="@Model.Price" value="@discountPrice" /></div>            
+        }
+    }
+    <div style="vertical-align:inherit" class="col-lg-1"><input asp-for="@Model.Quantity" value="@Model.Quantity" type="text" readonly style="text-align:center; width:25px; border: 1px solid #F58320" /></div>
+    @{ 
+        if (Model.SaleId != null)
+        {
+            <div style="vertical-align:inherit" class="col-lg-1">@(String.Format("{0:F2}", discountPrice * Model.Quantity)) BGN</div>
+        }
+        else
+        {
+            <div style="vertical-align:inherit" class="col-lg-1">@(String.Format("{0:F2}", Model.Price * Model.Quantity)) BGN</div>
+        }
+    }   
+</li>
+<hr />

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<AllBrandsViewModel>
+@{
+    ViewData["Title"] = "All Brands";
+}
+
+<center>
+    <h1>All Brands</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Brand Name</th>
+                <th>Products count</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @Html.DisplayForModel()
+        </tbody>
+    </table>
+    <br />
+</center>
+<a asp-area="Admin" asp-controller="Brands" asp-action="Create" class="btn btn-success">
+    <i class="glyphicon-plus"></i> Create new brand
+</a>
+

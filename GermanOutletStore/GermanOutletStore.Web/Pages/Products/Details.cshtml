@@ -1,0 +1,74 @@
+﻿@page "/Products/Details/{id}"
+@model GermanOutletStore.Web.Pages.Products.DetailsModel
+@using GermanOutletStore.Data;
+@inject StoreDbContext context
+
+@{
+    ViewData["Title"] = Model.Product.Name;
+}
+
+<div class="row"> 
+    
+    <div class="col-lg-6">
+        <h2 style="text-align:center">@Model.Product.Name</h2>
+        <img src="@Model.Product.ImagePath" class="img-responsive" />
+    </div>
+
+    <div class="col-lg-3">        
+        <div class="item-info">            
+            <div>
+                <span class="info-section">Manufacturer:</span> 
+                <a asp-area="" asp-controller="Brands" asp-action="AllProducts" asp-route-brand="@Model.Brand.Name">@Model.Brand.Name</a>
+            </div><br />
+            <div>
+                <span class="info-section">Rating: </span>@Model.Product.Rating</div><br />  
+            <a asp-area="" asp-page="/Reviews/AddReview" asp-route-id="@Model.Product.Id">Add review</a>
+        </div>        
+    </div>
+
+    <div class="col-lg-3">
+        <span>
+            <img id="brand-logo" src="@Model.Brand.ImagePath" />
+        </span>
+        @{
+            if (Model.Product.SaleId == null)
+            {
+                <span id="product-price">@(String.Format("{0:F2}", Model.Product.Price)) BGN</span><br />
+            }
+            else
+            {
+                <div id="price-box">
+                    <span id="special-price" style="font-size: 19px;font-weight: bold;color: red; margin: 0px 0px 0px 13px;padding: 10px 10px 10px 1px;">
+                        @(String.Format("{0:F2}", Model.Sale.DiscountPrice)) BGN
+                    </span>
+                    <span id="old-price" style="text-decoration: line-through solid;font-weight: normal;font-size: 15px;float: initial;margin-right: 20px;">
+                        @(String.Format("{0:F2}", Model.Product.Price)) BGN
+                    </span>
+                </div>
+            }
+        }
+        <form class="form-inline" method="post" style="display: block; width:214px">
+            <input asp-for="@Model.Quantity" min="1" max="25" value="1" style="margin-bottom:10px; width:212px" class="form-control" />
+            <select asp-items="new SelectList(@Model.SizesNames)" style="width:115px" asp-for="@Model.SizeName" class="form-control">
+                <option selected disabled>Select size</option>
+            </select>
+            <input type="submit" class="btn btn-success" value="Add to cart" />
+        </form>
+    </div>
+
+</div>
+<p>@Model.Product.Description</p>
+<br />
+<h2>Customer Reviews</h2>
+@{
+    if (Model.Reviews.Any())
+    {
+        <ul>
+            @Html.DisplayFor(x => x.Reviews)
+        </ul>
+    }
+    else
+    {
+        <span>No reviews for this product</span>
+    }
+}

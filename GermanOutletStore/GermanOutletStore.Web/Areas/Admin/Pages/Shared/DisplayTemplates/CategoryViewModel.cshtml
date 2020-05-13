@@ -1,0 +1,18 @@
+﻿@model CategoryViewModel
+
+<tr>
+    <td>@Model.Name</td>
+    @{
+        if (Model.ProductCount == 0)
+        {
+            <td>None</td>
+        }
+        else
+        {
+            <td>@Model.ProductCount</td>
+        }
+    }
+    <td>
+        <a asp-page="Edit" asp-area="Admin" asp-route-id="@Model.Id" class="btn btn-info">Edit</a>        
+    </td>
+</tr>

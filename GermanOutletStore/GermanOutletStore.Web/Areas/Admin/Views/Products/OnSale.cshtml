@@ -1,0 +1,39 @@
+﻿@model SaleCreationBindingModel
+@{
+    ViewData["Title"] = "Put On Sale";
+}
+
+<h2>Put on sale @Model.ProductName</h2>
+<div class="container-fluid">
+    <form asp-area="Admin" asp-controller="Products" asp-action="OnSale" class="form-horizontal" method="post">
+        <input hidden asp-for="@Model.ProductId" />
+        <div class="form-group">
+            <label>Name: </label>
+            <input readonly value="@Model.ProductName" asp-for="@Model.ProductName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Old price: </label>
+            <input readonly value="@Model.OldPrice" asp-for="@Model.OldPrice" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>New price: </label>
+            <input asp-for="@Model.NewPrice" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Starts on: </label>
+            <input readonly value="@DateTime.Now" asp-for="@Model.StartsOn" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Ends on: </label>
+            <input asp-for="@Model.EndsOn" type="datetime" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-success" value="Put On Sale" />
+            <a class="btn btn-default" asp-area="Admin" asp-controller="Products" asp-action="AllProducts">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

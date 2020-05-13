@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ProductShoppingCartViewModel>
+@inject StoreDbContext context
+@using GermanOutletStore.Data
+@{
+
+        ViewData["Title"] = "Shopping Cart";
+        decimal subtotal = 0m;
+        foreach (ProductShoppingCartViewModel item in Model)
+        {
+            if (item.SaleId == null)
+            {
+                subtotal += item.Price * item.Quantity;
+            }
+            else
+            {
+                subtotal += context.Sales.First(x => x.Id == item.SaleId).DiscountPrice * item.Quantity;
+            }
+        }
+   } 
+
+<div class="container-fluid">
+    <h2>Shopping Cart</h2>
+    <form class="form-horizontal" asp-area="" asp-controller="Checkout" asp-action="Cart" method="post">
+        <table class="table table-hover" style="align-content:center">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Product Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @Html.DisplayForModel()
+            </tbody>
+        </table>
+        <div style="text-align:right">
+            <input type="submit" asp-area="" asp-controller="Checkout" asp-action="Cart" class="btn btn-default" value="Update Shopping Cart" /><br />
+        </div>
+    </form>
+    <div style="text-align:right;margin-top:20px">
+        <p>Subtotal: @String.Format("{0:F2}", subtotal) BGN</p><br />
+        <h2>Grand Total @String.Format("{0:F2}", subtotal) BGN</h2><br />
+        <a class="btn btn-primary" asp-area="" asp-controller="Checkout" asp-action="Checkout">PROCEED TO CHECKOUT</a>
+    </div>
+</div>

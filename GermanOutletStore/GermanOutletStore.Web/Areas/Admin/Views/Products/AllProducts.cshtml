@@ -1,0 +1,30 @@
+﻿@model IEnumerable<ProductViewModel>
+@{
+    ViewData["Title"] = "All Products";
+}
+
+<div class="container-fluid">
+    <center>
+        <h2>All Products</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product name</th>
+                    <th>Price</th>
+                    <th>Brand</th>
+                    <th>Is in stock</th>
+                    <th>Sizes</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @Html.DisplayForModel()
+            </tbody>
+        </table>
+    </center>
+    <br />
+    <a asp-area="Admin" asp-controller="Products" asp-action="Create" class="btn btn-success">
+        <i class="glyphicon-plus"></i> Create new product
+    </a>
+</div>
+

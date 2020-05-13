@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8NMdH6Vgg0aDr8JUcR/JcAAAAAACAAAAAAAQZgAAAAEAACAAAACrrndeccoKrwfVkLpSXy9WUqqZDCsgNfkWe9Xb0x3s9QAAAAAOgAAAAAIAACAAAACy1u+lvRRBxAJWBQAH37HPFYjkXtkzHqqRwlOhMDLvqYAAAADWtn6CtDBey85n+K+NxEh0NFxf881HuvmP93Tn24LQZa3CIc/fSuVFAJgx6D9BnzTwjrP/uUKYjIuNIkQzvFwmZG4w424h8PIt0c5c4d3vhMwAuPRXhZp/CkMLoJjLPGBFgOSTounPV5r9M3UZ7wMNfJhfgsTIy6B03SsvDPRcQUAAAAAzvPopFHrLaAyTPQ+1NFjutnTM01yiZ/U10LfnY6tCeUKpgK/fPtjTPYMDRJ9iemg21YsT2AXo1cCM66Pr+yb/</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="GermanOutletStore">
+      <Value>Data Source=tcp:outletgermancentersqlserver.database.windows.net,1433%3bInitial Catalog=OutletGermanCenterDB%3bUser Id=boiche%40outletgermancentersqlserver.database.windows.net%3bPassword=Tetron2000%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

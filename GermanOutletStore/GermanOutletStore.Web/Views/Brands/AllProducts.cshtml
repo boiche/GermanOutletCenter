@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ProductViewModel>
+@{
+    ViewData["Title"] = "All Products";
+}
+
+<h2>All Products by @Model.First().BrandName</h2>
+<ul class="list-unstyled">
+    <div class="row">
+        @Html.DisplayForModel()
+    </div>
+</ul>

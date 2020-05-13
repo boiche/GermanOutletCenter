@@ -1,0 +1,77 @@
+﻿@model ProductCreationBindingModel
+@{
+    ViewData["Title"] = "Edit Product";
+}
+@using GermanOutletStore.Data
+@inject StoreDbContext Context
+
+<div class="container-fluid">
+    <h2>Edit product @Model.Name</h2>
+    <form method="post" asp-area="Admin" asp-controller="Products" asp-action="EditProduct" class="form-horizontal" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Name: </label>
+            <input type="text" asp-for="@Model.Name" value="@Model.Name" name="Name" placeholder="Product name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Description: </label>
+            <input type="text" asp-for="@Model.Description" value="@Model.Description" placeholder="Description" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Price: </label>
+            <input asp-for="@Model.Price" value="@Model.Price" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Image Path: </label>
+            <input asp-for="@Model.ImagePath" name="ImagePath" readonly class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <input asp-for="@Model.UploadedFile" class="file" value="Choose file." type="file" name="UploadedFile" accept="image/*" />
+        </div>
+
+        <div class="form-group">
+            <label>Brand: </label>
+            <select class="form-control" asp-for="@Model.BrandName" asp-items="@(new SelectList(Context.Brands.Select(x => x.Name)))">
+                <option selected hidden value="@Context.Brands.First(x => x.Id == Model.BrandId).Name">@(Context.Brands.First(x => x.Id == Model.BrandId).Name)</option>
+            </select>
+        </div>
+        <div class="form-group form-horizontal form-inline col-lg-12">
+            <label>Select available sizes: </label>
+            @for (int i = 0; i < Model.AllSizes.Count; i++)
+            {
+                Model.AvailableSizes.Add(false);
+
+                <input class="form-control form-inline" type="checkbox" value="@true" asp-for="@Model.AvailableSizes[i]" /> @Model.AllSizes[i].Name
+            }
+        </div>
+        <input asp-for="@Model.AllSizes" value="@Model.AllSizes" hidden />
+        <input asp-for="@Model.ProductId" value="@Model.ProductId" hidden />
+
+            @if (Model.ImagePath.Contains("images"))
+            {
+                <em>
+                    <strong> Note: </strong>
+                    Enter new name first to refresh image path's value. Then re-enter the wished name.
+                </em>
+            }
+              
+        <div class="form-group">
+            <input type="submit" value="Edit" class="btn btn-success" />
+            <a class="btn btn-default" asp-area="Admin" asp-controller="Products" asp-action="AllProducts">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+<script>
+    $(function () {
+        $("#Name")
+            .change(function (e) {
+                let value = $(this).val();
+                let imagePath = `/SiteImages/products/` + value.split(new RegExp(/[“|\\ \?:,\*<>#'&'\+%{}[\]~\)\(]+/)).join("") + ".jpg";
+                $("#ImagePath").val(imagePath);
+            });
+    });
+</script>
+}

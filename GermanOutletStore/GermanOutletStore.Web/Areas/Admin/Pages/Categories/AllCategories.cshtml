@@ -1,0 +1,25 @@
+﻿@page "/Admin/Categories/AllCategories"
+@model GermanOutletStore.Web.Areas.Admin.Pages.Categories.AllCategoriesModel
+@{
+    ViewData["Title"] = "All categories";
+}
+
+<center>
+    <h1>All Categories</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Category name</th>
+                <th>Products count</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @Html.DisplayFor(x => x.AllCategories)
+        </tbody>
+    </table>
+    <br />    
+</center>
+<a asp-area="Admin" asp-page="Create" class="btn btn-success">
+    <i class="glyphicon-plus"></i> Create new category
+</a>

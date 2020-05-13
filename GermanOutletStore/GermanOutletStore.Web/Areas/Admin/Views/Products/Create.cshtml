@@ -1,0 +1,69 @@
+﻿@model ProductCreationBindingModel
+@inject StoreDbContext context
+@using GermanOutletStore.Data
+@{
+    ViewData["Title"] = "Create new product";
+}
+
+<div class="container-fluid">
+    <h2>Create new product</h2>
+    <form method="post" asp-area="Admin" asp-controller="Products" asp-action="Create" class="form-horizontal" enctype="multipart/form-data">        
+        <div class="form-group">
+            <label>Name: </label>
+            <input type="text" asp-for="@Model.Name" name="Name" placeholder="Product name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Description: </label>
+            <input type="text" asp-for="@Model.Description" placeholder="Description" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Price: </label>
+            <input asp-for="@Model.Price" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Image Path: </label>
+            <input type="text" asp-for="@Model.ImagePath" name="ImagePath" class="form-control" readonly />
+        </div>
+        <div class="form-group">
+            <input class="file" value="Choose file." type="file" name="UploadedFile" accept="image/*" asp-for="@Model.UploadedFile" />
+        </div>
+        <div class="form-group">
+            <label>Brand: </label>
+            <select asp-for="@Model.BrandName" asp-items="@(new SelectList(context.Brands.Where(x=>x.Name != "Other").Select(x => x.Name)).Append(new SelectListItem("Other", "Other")))"></select>
+        </div>
+        <div class="form-group form-horizontal form-inline col-lg-12">
+            <label>Select product category: </label>
+            @foreach (ProductType item in Model.Types)
+            {
+                <input class="form-control" type="radio" value="@item.Id" name="TypeId" asp-for="@Model.TypeId" /> @item.Name
+            }
+        </div>
+        <div class="form-group form-horizontal form-inline col-lg-12">
+            <label>Select available sizes: </label>
+            @for (int i = 0; i < Model.AllSizes.Count; i++)
+            {
+                Model.AvailableSizes.Add(false);
+
+                <input class="form-control form-inline" type="checkbox" value="@true" asp-for="@Model.AvailableSizes[i]" /> @Model.AllSizes[i].Name
+            }
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-success" />
+            <a class="btn btn-default" asp-area="Admin" asp-controller="Home" asp-action="Index">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(function () {
+            $("#Name")
+                .change(function (e) {
+                    let value = $(this).val();
+                    let imagePath = `/SiteImages/products/` + value.split(new RegExp(/[“|\\ \?:,\*<>#'&'\+%{}[\]~\)\(]+/)).join("") + ".jpg";
+                    $("#ImagePath").val(imagePath);
+                });
+        });
+    </script>
+}

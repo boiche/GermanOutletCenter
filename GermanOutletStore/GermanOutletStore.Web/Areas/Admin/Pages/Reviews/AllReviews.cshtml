@@ -1,0 +1,10 @@
+﻿@page "/Admin/Reviews/AllReviews/{id:int}"
+@model GermanOutletStore.Web.Areas.Admin.Pages.Reviews.AllReviewsModel
+@{
+    ViewData["Title"] = "All Reviews";
+}
+
+<h1>Reviews for @Model.Product.Name</h1>
+<ul class="list-group list-unstyled">
+    @Html.DisplayFor(x => x.AllReviews)
+</ul>

@@ -1,0 +1,21 @@
+﻿@page "/Reviews/AddReview/{id:int}"
+@model GermanOutletStore.Web.Pages.Reviews.AddReviewModel
+@{
+    ViewData["Title"] = "Add Review";
+}
+
+<h2>Add Review for @Model.Product.Name</h2>
+<form method="post">
+    <div class="form-group">
+        <label>Rating: </label>
+        <input type="number" name="Rating" min="1" max="5" step="0.5" value="1" class="form-control" asp-for="@Model.CreateModel.Rating" />
+    </div>
+    <div class="form-group">
+        <label>Review: </label>
+        <textarea class="form-control" name="Content" rows="7" placeholder="Your opinion on this product." asp-for="@Model.CreateModel.Content"></textarea>
+    </div>    
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-success" />
+        <a asp-area="" asp-page="/Products/Details" asp-route-id="@Model.Product.Id" class="btn btn-default">Cancel</a>
+    </div>
+</form>
