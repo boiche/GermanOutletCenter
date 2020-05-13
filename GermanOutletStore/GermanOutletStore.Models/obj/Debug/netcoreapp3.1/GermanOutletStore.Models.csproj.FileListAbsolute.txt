@@ -1,0 +1,9 @@
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Models\bin\Debug\netcoreapp3.1\GermanOutletStore.Models.deps.json
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Models\bin\Debug\netcoreapp3.1\GermanOutletStore.Models.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Models\bin\Debug\netcoreapp3.1\GermanOutletStore.Models.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Models\obj\Debug\netcoreapp3.1\GermanOutletStore.Models.csprojAssemblyReference.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Models\obj\Debug\netcoreapp3.1\GermanOutletStore.Models.csproj.CoreCompileInputs.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Models\obj\Debug\netcoreapp3.1\GermanOutletStore.Models.AssemblyInfoInputs.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Models\obj\Debug\netcoreapp3.1\GermanOutletStore.Models.AssemblyInfo.cs
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Models\obj\Debug\netcoreapp3.1\GermanOutletStore.Models.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Models\obj\Debug\netcoreapp3.1\GermanOutletStore.Models.pdb

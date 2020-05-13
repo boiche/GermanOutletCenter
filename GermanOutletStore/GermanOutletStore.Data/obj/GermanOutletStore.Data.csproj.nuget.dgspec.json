@@ -1,0 +1,160 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Data\\GermanOutletStore.Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Data\\GermanOutletStore.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Data\\GermanOutletStore.Data.csproj",
+        "projectName": "GermanOutletStore.Data",
+        "projectPath": "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Data\\GermanOutletStore.Data.csproj",
+        "packagesPath": "C:\\Users\\35988\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\35988\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Models\\GermanOutletStore.Models.csproj": {
+                "projectPath": "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Models\\GermanOutletStore.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Models\\GermanOutletStore.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Models\\GermanOutletStore.Models.csproj",
+        "projectName": "GermanOutletStore.Models",
+        "projectPath": "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Models\\GermanOutletStore.Models.csproj",
+        "packagesPath": "C:\\Users\\35988\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\35988\\Documents\\GitHub\\GermanOutletCenter\\GermanOutletStore\\GermanOutletStore.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\35988\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

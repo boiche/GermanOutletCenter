@@ -1,0 +1,15 @@
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\bin\Debug\netcoreapp3.1\GermanOutletStore.Data.deps.json
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\bin\Debug\netcoreapp3.1\GermanOutletStore.Data.runtimeconfig.json
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\bin\Debug\netcoreapp3.1\GermanOutletStore.Data.runtimeconfig.dev.json
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\bin\Debug\netcoreapp3.1\GermanOutletStore.Data.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\bin\Debug\netcoreapp3.1\GermanOutletStore.Data.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\bin\Debug\netcoreapp3.1\GermanOutletStore.Models.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\bin\Debug\netcoreapp3.1\GermanOutletStore.Models.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\obj\Debug\netcoreapp3.1\GermanOutletStore.Data.csprojAssemblyReference.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\obj\Debug\netcoreapp3.1\GermanOutletStore.Data.csproj.CoreCompileInputs.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\obj\Debug\netcoreapp3.1\GermanOutletStore.Data.AssemblyInfoInputs.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\obj\Debug\netcoreapp3.1\GermanOutletStore.Data.AssemblyInfo.cs
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\obj\Debug\netcoreapp3.1\GermanOutletStore.Data.csproj.CopyComplete
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\obj\Debug\netcoreapp3.1\GermanOutletStore.Data.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\obj\Debug\netcoreapp3.1\GermanOutletStore.Data.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Data\obj\Debug\netcoreapp3.1\GermanOutletStore.Data.genruntimeconfig.cache

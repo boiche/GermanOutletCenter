@@ -1,0 +1,16 @@
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\bin\Debug\netcoreapp3.1\GermanOutletStore.Services.deps.json
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\bin\Debug\netcoreapp3.1\GermanOutletStore.Services.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\bin\Debug\netcoreapp3.1\GermanOutletStore.Services.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\bin\Debug\netcoreapp3.1\GermanOutletStore.Common.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\bin\Debug\netcoreapp3.1\GermanOutletStore.Data.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\bin\Debug\netcoreapp3.1\GermanOutletStore.Models.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\bin\Debug\netcoreapp3.1\GermanOutletStore.Common.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\bin\Debug\netcoreapp3.1\GermanOutletStore.Models.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\bin\Debug\netcoreapp3.1\GermanOutletStore.Data.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\obj\Debug\netcoreapp3.1\GermanOutletStore.Services.csprojAssemblyReference.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\obj\Debug\netcoreapp3.1\GermanOutletStore.Services.csproj.CoreCompileInputs.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\obj\Debug\netcoreapp3.1\GermanOutletStore.Services.AssemblyInfoInputs.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\obj\Debug\netcoreapp3.1\GermanOutletStore.Services.AssemblyInfo.cs
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\obj\Debug\netcoreapp3.1\GermanOutletStore.Services.csproj.CopyComplete
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\obj\Debug\netcoreapp3.1\GermanOutletStore.Services.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Services\obj\Debug\netcoreapp3.1\GermanOutletStore.Services.pdb

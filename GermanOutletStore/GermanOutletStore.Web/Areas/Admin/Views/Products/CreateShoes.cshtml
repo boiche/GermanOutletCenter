@@ -5,7 +5,7 @@
 
 <div class="container-fluid">
     <h2>Create new shoes</h2>
-    <form method="post" asp-area="Admin" asp-controller="Products" asp-action="CreateShoes" class="form-horizontal" enctype="multipart/form-data">
+    <form method="post" asp-area="Admin" asp-controller="Products" asp-action="CreateShoesPost" class="form-horizontal" enctype="multipart/form-data">
         <input asp-for="@Model.ProductId" hidden value="@Model.ProductId" />
         <div class="form-group">
             <label>Name: </label>

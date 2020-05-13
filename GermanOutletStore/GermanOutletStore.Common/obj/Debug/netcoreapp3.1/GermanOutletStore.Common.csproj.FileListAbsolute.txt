@@ -1,0 +1,14 @@
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\bin\Debug\netcoreapp3.1\GermanOutletStore.Common.deps.json
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\bin\Debug\netcoreapp3.1\GermanOutletStore.Common.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\bin\Debug\netcoreapp3.1\GermanOutletStore.Common.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\bin\Debug\netcoreapp3.1\GermanOutletStore.Data.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\bin\Debug\netcoreapp3.1\GermanOutletStore.Models.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\bin\Debug\netcoreapp3.1\GermanOutletStore.Data.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\bin\Debug\netcoreapp3.1\GermanOutletStore.Models.pdb
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\obj\Debug\netcoreapp3.1\GermanOutletStore.Common.csprojAssemblyReference.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\obj\Debug\netcoreapp3.1\GermanOutletStore.Common.csproj.CoreCompileInputs.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\obj\Debug\netcoreapp3.1\GermanOutletStore.Common.AssemblyInfoInputs.cache
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\obj\Debug\netcoreapp3.1\GermanOutletStore.Common.AssemblyInfo.cs
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\obj\Debug\netcoreapp3.1\GermanOutletStore.Common.csproj.CopyComplete
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\obj\Debug\netcoreapp3.1\GermanOutletStore.Common.dll
+C:\Users\35988\Documents\GitHub\GermanOutletCenter\GermanOutletStore\GermanOutletStore.Common\obj\Debug\netcoreapp3.1\GermanOutletStore.Common.pdb

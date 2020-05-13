@@ -11,7 +11,6 @@ using GermanOutletStore.Models;
 using GermanOutletStore.Common;
 using AutoMapper;
 using GermanOutletStore.Services.Products;
-using GermanOutletStore.Web.Filters;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
 using Microsoft.Extensions.FileProviders.Physical;
@@ -69,31 +68,20 @@ namespace GermanOutletStore.Web
             services.AddAutoMapper();
             services.AddSession();
 
-            services.AddAuthentication().AddFacebook(opt =>
-            {
-                opt.AppId = this.Configuration.GetSection("ExternalAuthentication:Facebook:AppId").Value;
-                opt.AppSecret = this.Configuration.GetSection("ExternalAuthentication:Facebook:AppSecret").Value;
-            })
-            .AddGoogle(opt => 
-            {
-                opt.ClientId = this.Configuration.GetSection("ExternalAuthentication:Google:ClientId").Value;
-                opt.ClientSecret = this.Configuration.GetSection("ExternalAuthentication:Google:ClientSecret").Value;
-            });
-
             services
-                .AddMvc()           
-                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);            
+                .AddMvc(options => options.EnableEndpointRouting = false)          
+                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(
             IApplicationBuilder app, 
-            IHostingEnvironment env)
+            IWebHostEnvironment env)
         {
             app.UseResponseCaching();
             app.UseResponseCompression();
 
-            if (env.IsDevelopment())
+            if (env.EnvironmentName == "Develop")
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();

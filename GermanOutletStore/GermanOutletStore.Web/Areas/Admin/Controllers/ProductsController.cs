@@ -30,11 +30,11 @@ namespace GermanOutletStore.Web.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            int a = 0;
+            int size = default;
             ProductCreationBindingModel model = new ProductCreationBindingModel()
             {
                 Types = context.Types.OrderBy(x => x.Name).ToList(),
-                AllSizes = context.Sizes.Where(x => int.TryParse(x.Name, out a) == false).OrderBy(x => x.Id).ToList(),
+                AllSizes = context.Sizes.Where(x => int.TryParse(x.Name, out size) == false).OrderBy(x => x.Id).ToList(),
                 AvailableSizes = new List<bool>(),                       
             };            
 
@@ -108,16 +108,16 @@ namespace GermanOutletStore.Web.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult CreateShoes(ProductCreationBindingModel model)
         {
-            int a = 0;
+            int size = default;
             model.AvailableSizes.Clear();
             model.Types = context.Types.OrderBy(x => x.Name).ToList();
-            model.AllSizes = context.Sizes.Where(x => int.TryParse(x.Name, out a) == true).OrderBy(x => x.Id).ToList();            
+            model.AllSizes = context.Sizes.Where(x => int.TryParse(x.Name, out size) == true).OrderBy(x => x.Id).ToList();            
 
             return this.View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateShoes(ProductCreationBindingModel model, string emptyParam = "")
+        public async Task<IActionResult> CreateShoesPost(ProductCreationBindingModel model)
         {
             if (ModelState.IsValid == false)
             {
